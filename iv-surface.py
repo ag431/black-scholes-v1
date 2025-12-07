@@ -16,6 +16,7 @@ def black_scholes(S, K, T, r, sigma, q=0, otype="call"):
         put = K * jnp.exp(-r * T) * jnorm.cdf(-d2, 0, 1) - S * jnp.exp(-q * T) * jnorm.cdf(-d1, 0, 1)
         return put
 
+# Test Input Code
 S = 100.00
 K = 110.00
 T = 0.8
